@@ -1,0 +1,26 @@
+server:
+  port: 9292
+
+spring:
+  application:
+    name: Db_to_File
+
+  batch:
+    initialize-schema: ALWAYS
+    job:
+      enabled: false
+
+
+    cloud:
+          config:
+            uri: http://Config-server
+
+#  jpa:
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+#    show-sql: true
+
